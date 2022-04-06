@@ -1,0 +1,19 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#oh-no {
+    font-size: 50px;
+}
+
+#info-text {
+    font-size: 25px;
+}
+
+#nf-img {
+    width: 250px;
+}

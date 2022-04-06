@@ -1,38 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(152, 152, 152, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  /* background-color: black; */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 420px) {
+  .all-movies {
+    min-width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .all-movies {
+    max-width: 380px;
+  }
+
+  .movie-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    min-width: 250px;
+  }
+
+  .movie-poster {
+    max-width: 110px;
+  }
+
+  #nav-ul {
+    margin-right: 15px;
   }
 }

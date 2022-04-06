@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&display=swap');
+
+.all-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#welcome-wrapper {
+    font-weight: bolder;
+    height: 420px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://media.wired.co.uk/photos/606d9ea06a2b7484dab92d37/master/w_1600%2Cc_limit/wired-movie-industry.jpg');
+}
+
+#popcorn {
+    width: 300px;
+    height: 150px;
+}
+
+#welcome-title {
+    font-size: 60px;
+    padding: 5px 15px;
+    animation: welcome-title 2s ease-out;
+}
+
+@keyframes welcome-title {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#welcome-undertitle {
+    font-size: 25px;
+    padding: 5px 15px;
+    animation: welcome-undertitle 2s ease-out;
+}
+
+
+@keyframes welcome-undertitle {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#quote-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#quote {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'IBM Plex Serif', serif;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.63);
+    box-shadow: 10px 10px 2px 1px rgba(255, 255, 255, 0.541);
+}
+
+.quotes {
+    font-size: 65px;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.movie-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 50px;
+}
+
+#search-title {
+    font-size: 22px;
+}
+
+#search-input {
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 90px;
+    height: 20px;
+    line-height: 40px;
+    transition: ease-out 1s;
+    position: relative;
+    text-align: center;
+}
+
+#search-input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+#search-input:hover {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(146, 146, 146, 0.404);
+}
